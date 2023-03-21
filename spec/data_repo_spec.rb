@@ -25,4 +25,9 @@ describe DataRepo do
     @data_repo.set("second", "hi")
     expect(@data_repo.find("second")).to eq("hi")
   end
+
+  it "finds data stored in the repo" do
+    @data_repo.set("third", "ahoy")
+    expect(@data_repo.find("third")).to eq("ahoy")
+  end
 end
