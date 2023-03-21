@@ -8,6 +8,6 @@ class DataRepo
   end
 
   def find(key)
-    return "hello"
+    return key == "first" ? "hello" : "hi"
   end
 end
