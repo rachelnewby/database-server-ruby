@@ -8,6 +8,6 @@ class DataRepo
   end
 
   def find(key)
-    return @data["#{key}"]
+    return @data[key]
   end
 end
